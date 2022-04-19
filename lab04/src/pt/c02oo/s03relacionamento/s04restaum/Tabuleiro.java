@@ -27,6 +27,8 @@ public class Tabuleiro {
     }
 
     private void removePeca(String casa) {
+    	Peca pecaRemovida = buscaPeca(casa);
+    	pecaRemovida.setTabuleiro(null);
         tabuleiro.remove(casa);
     }
 

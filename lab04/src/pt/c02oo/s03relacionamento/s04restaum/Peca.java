@@ -5,7 +5,7 @@ public class Peca {
     private Tabuleiro tabuleiro;
     
     public Peca(char[] posicao, Tabuleiro tabuleiro) {
-    	this.tabuleiro = tabuleiro;
+    	setTabuleiro(tabuleiro);
         setPosicao(posicao);
     }
 
@@ -16,6 +16,10 @@ public class Peca {
 
     public String getPosicao() {
         return String.valueOf(posicao);
+    }
+    
+    public void setTabuleiro(Tabuleiro tabuleiro) {
+    	this.tabuleiro = tabuleiro;
     }
 
     public String move(char[] destino) {
